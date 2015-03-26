@@ -1,4 +1,22 @@
-系统使用 GNU Autotools 版本
-autoconf
-automake
+工程使用 GNU Autotools 管理源码
+版本
+GNU Autoconf 2.68b
+GNU Automake 1.13.4
+
+重点需要开发者维护的文件：
+顶层目录configure.ac
+各目录Makefile.am
+
+修改configure.ac后需要autoconf
+
+可以通过configure指定软件发布的目录/home/mjk/mjkproxy
+
+./configure --prefix=/home/mjk/mjkproxy
+make
+make install
+make dist
+make clean
+
+
+
 
